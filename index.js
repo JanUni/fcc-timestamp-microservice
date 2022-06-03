@@ -30,7 +30,7 @@ app.get('/api', (req, res) => {
   });
 });
 
-//Param with special Date
+//Params with special Date
 app.get('/api/:date', function (req, res) {
   let date = new Date(req.params.date);
   isNaN(date) ? (date = new Date(parseInt(req.params.date))) : false;
